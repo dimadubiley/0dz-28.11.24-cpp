@@ -20,8 +20,9 @@ public:
 	virtual void Print()
 	{
 		cout << "Name: " << name
-			<< "\tWeight: " << weight
-			<< "\t Fuel consumption: " << fuelCon;
+			<< "\t Weight: " << weight
+			<< "\t Fuel consumption: " << fuelCon
+			<< "\t Prise: " << prise;
 	}
 	virtual double getPrise()
 	{
@@ -65,11 +66,11 @@ public:
 	}
 };
 
-class Sydio : public Transport
+class Grus : public Transport
 {
 public:
-	Sydio() {}
-	Sydio(string n, double w, int f) :Transport(n, w, f)
+	Grus() {}
+	Grus(string n, double w, int f) :Transport(n, w, f)
 	{
 		prise = 30'000;
 	}
