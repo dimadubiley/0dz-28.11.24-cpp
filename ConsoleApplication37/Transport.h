@@ -24,10 +24,7 @@ public:
 			<< "\t Fuel consumption: " << fuelCon
 			<< "\t Prise: " << prise;
 	}
-	virtual double getPrise()
-	{
-		return prise;
-	}
+	virtual double getPrise() const = 0;
 };
 
 class Avto : public Transport
